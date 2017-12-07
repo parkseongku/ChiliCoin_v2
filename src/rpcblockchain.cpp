@@ -95,7 +95,7 @@ Object blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool txDe
         zphrObj.push_back(Pair(to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
     zphrObj.emplace_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
-    result.emplace_back(Pair("zPHRsupply", zphrObj));
+    result.emplace_back(Pair("zCHILIsupply", zphrObj));
 
     return result;
 }
@@ -175,7 +175,7 @@ Value getrawmempool(const Array& params, bool fHelp)
             "{                           (json object)\n"
             "  \"transactionid\" : {       (json object)\n"
             "    \"size\" : n,             (numeric) transaction size in bytes\n"
-            "    \"fee\" : n,              (numeric) transaction fee in phore\n"
+            "    \"fee\" : n,              (numeric) transaction fee in chilicoin\n"
             "    \"time\" : n,             (numeric) local time transaction entered pool in seconds since 1 Jan 1970 GMT\n"
             "    \"height\" : n,           (numeric) block height when transaction entered pool\n"
             "    \"startingpriority\" : n, (numeric) priority when transaction entered pool\n"
@@ -278,17 +278,17 @@ Value getblock(const Array& params, bool fHelp)
             "  \"previousblockhash\" : \"hash\",  (string) The hash of the previous block\n"
             "  \"nextblockhash\" : \"hash\"       (string) The hash of the next block\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zPHRsupply\" :\n"
+            "  \"zCHILIsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zPHR denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zPHR denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zPHR denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zPHR denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zPHR denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zPHR denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zPHR denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zPHR denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zPHR denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zCHILI denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zCHILI denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zCHILI denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zCHILI denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zCHILI denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zCHILI denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zCHILI denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zCHILI denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zCHILI denominations\n"
             "  }\n"
             "}\n"
             "\nResult (for verbose=false):\n"
@@ -428,8 +428,8 @@ Value gettxout(const Array& params, bool fHelp)
             "     \"hex\" : \"hex\",        (string) \n"
             "     \"reqSigs\" : n,          (numeric) Number of required signatures\n"
             "     \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n"
-            "     \"addresses\" : [          (array of string) array of phore addresses\n"
-            "     \"phoreaddress\"   	 	(string) phore address\n"
+            "     \"addresses\" : [          (array of string) array of chilicoin addresses\n"
+            "     \"chilicoinaddress\"   	 	(string) chilicoin address\n"
             "        ,...\n"
             "     ]\n"
             "  },\n"

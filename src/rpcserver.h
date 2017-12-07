@@ -96,7 +96,7 @@ public:
 };
 
 /**
- * Phore RPC command dispatcher.
+ * ChiliCoin RPC command dispatcher.
  */
 class CRPCTable
 {

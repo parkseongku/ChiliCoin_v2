@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: phored.service
-Upstart: phored.conf
-OpenRC:  phored.openrc
-         phored.openrcconf
-CentOS:  phored.init
+SystemD: chilicoind.service
+Upstart: chilicoind.conf
+OpenRC:  chilicoind.openrc
+         chilicoind.openrcconf
+CentOS:  chilicoind.init
 
 have been made available to assist packagers in creating node packages here.
 
