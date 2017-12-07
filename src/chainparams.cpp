@@ -54,10 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256("2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"))
-    (  1000, uint256("8defd49579d63545f9e8cdda31f8503e0513328ca3f7428f33a915258c764d15"))
-    ( 10000, uint256("6af2431daa7456e4620e9493091648eeaac8ddfd53d8cff8101c26806e301d9a"))
-    ( 90000, uint256("a883d86273f02cb19252a878d1e0bda1e5321140480b08e3df9544d7b3d1ce56"));
+    (     0, uint256("2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
     
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -126,11 +123,11 @@ public:
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
         nModifierUpdateBlock = 999999999;
-        nZerocoinStartHeight = 90000;
-        nBlockEnforceSerialRange = 90003; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 90005; //Trigger a recalculation of accumulators
+        nZerocoinStartHeight = 250;
+        nBlockEnforceSerialRange = 253; //Enforce serial range starting this block
+        nBlockRecalculateAccumulators = 255; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 90002; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 90005; //Last valid accumulator checkpoint
+        nBlockLastGoodCheckpoint = 255; //Last valid accumulator checkpoint
         nZerocoinStartTime = 1510734300; // October 17, 2017 4:30:00 AM
 
         /**
@@ -143,7 +140,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "12 September 2017";
+        const char* pszTimestamp = "ChiliCoin - Hot as hell";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -153,26 +150,26 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1505224800;
+        genesis.nTime = 1512640003;
         genesis.nBits = 0x207fffff;;
-        genesis.nNonce = 12345;
+        genesis.nNonce = 0;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
-        assert(genesis.hashMerkleRoot == uint256("0x894177137a45952cfed89dd395e7fc85208a53548f34defc7c1a85cb0736b3a3"));
+        assert(hashGenesisBlock == uint256("0x"));
+        assert(genesis.hashMerkleRoot == uint256("0x"));
 
-        vSeeds.push_back(CDNSSeedData("0", "dns0.chilicoin.io"));
-        vSeeds.push_back(CDNSSeedData("1", "dns1.chilicoin.io"));
-        vSeeds.push_back(CDNSSeedData("2", "dns2.chilicoin.io"));
-        vSeeds.push_back(CDNSSeedData("3", "dns3.chilicoin.io"));
-        vSeeds.push_back(CDNSSeedData("4", "dns4.chilicoin.io"));
-        vSeeds.push_back(CDNSSeedData("5", "dns5.chilicoin.io"));
-        vSeeds.push_back(CDNSSeedData("6", "dns6.chilicoin.io"));
-        vSeeds.push_back(CDNSSeedData("7", "dns7.chilicoin.io"));
-        vSeeds.push_back(CDNSSeedData("8", "dns8.chilicoin.io"));
-        vSeeds.push_back(CDNSSeedData("9", "dns9.chilicoin.io"));
+        vSeeds.push_back(CDNSSeedData("0", "seed0.chilicoin.io"));
+        vSeeds.push_back(CDNSSeedData("1", "seed1.chilicoin.io"));
+        vSeeds.push_back(CDNSSeedData("2", "seed2.chilicoin.io"));
+        vSeeds.push_back(CDNSSeedData("3", "seed3.chilicoin.io"));
+        vSeeds.push_back(CDNSSeedData("4", "seed4.chilicoin.io"));
+        vSeeds.push_back(CDNSSeedData("5", "seed5.chilicoin.io"));
+        vSeeds.push_back(CDNSSeedData("6", "seed6.chilicoin.io"));
+        vSeeds.push_back(CDNSSeedData("7", "seed7.chilicoin.io"));
+        vSeeds.push_back(CDNSSeedData("8", "seed8.chilicoin.io"));
+        vSeeds.push_back(CDNSSeedData("9", "seed9.chilicoin.io"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 28);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
