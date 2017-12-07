@@ -126,7 +126,7 @@ public:
         nZerocoinStartHeight = 250;
         nBlockEnforceSerialRange = 253; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 255; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 90002; //First block that bad serials emerged
+        nBlockFirstFraudulent = 252; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = 255; //Last valid accumulator checkpoint
         nZerocoinStartTime = 1510734300; // October 17, 2017 4:30:00 AM
 
