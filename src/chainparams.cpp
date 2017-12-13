@@ -105,7 +105,7 @@ public:
         pchMessageStart[1] = 0xc4;
         pchMessageStart[2] = 0xfd;
         pchMessageStart[3] = 0xe9;
-        vAlertPubKey = ParseHex("04659d53bd8f7ad9d34a17281febedac754e5a6eb136142d3a9c6c0ea21b6ed7498ceb3d872eed00ae755f7aeadaeb1d9ab5e1a8f1e7efcd0ddcb39d4623c12790");
+        vAlertPubKey = ParseHex("0489668360ea1b46d640e109b1453fbf0c9ee11551ab115dfcae6b7dd343cab923a1349bbdfd5e587063e4700d9f58a71cca142667227497d7393b100e66c3e422");
         nDefaultPort = 63891;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nSubsidyHalvingInterval = 210000;
@@ -128,23 +128,14 @@ public:
         nBlockRecalculateAccumulators = 255; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 252; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = 255; //Last valid accumulator checkpoint
-        nZerocoinStartTime = 1510734300; // October 17, 2017 4:30:00 AM
+        nZerocoinStartTime = 1513180800; // December 13, 2017 4:00:00 PM
 
-        /**
-         * Build the genesis block. Note that the output of the genesis coinbase cannot
-         * be spent as it did not originally exist in the database.
-         *
-         * CBlock(hash=00000ffd590b14, ver=1, hashPrevBlock=00000000000000, hashMerkleRoot=e0028e, nTime=1390095618, nBits=1e0ffff0, nNonce=28917698, vtx=1)
-         *   CTransaction(hash=e0028e, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-         *     CTxIn(COutPoint(000000, -1), coinbase 04ffff001d01044c5957697265642030392f4a616e2f3230313420546865204772616e64204578706572696d656e7420476f6573204c6976653a204f76657273746f636b2e636f6d204973204e6f7720416363657074696e6720426974636f696e73)
-         *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
-         *   vMerkleTree: e0028e
-         */
+
         const char* pszTimestamp = "ChiliCoin - Hot as hell";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
-        txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
+        txNew.vin[0].scriptSig = CScript() << 486604798 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].SetEmpty();
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
@@ -159,7 +150,7 @@ public:
             LogPrintf("recalculating params for mainnet.\n");
             for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ } 
             LogPrintf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-            LogPrintf("new mainnet genesis nonce: %ld\n", genesis.nNonce);
+            LogPrintf("new mainnet genesis nonce: %u\n", genesis.nNonce);
             LogPrintf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
 			
         assert(hashGenesisBlock == uint256("0x"));
@@ -197,7 +188,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04659d53bd8f7ad9d34a17281febedac754e5a6eb136142d3a9c6c0ea21b6ed7498ceb3d872eed00ae755f7aeadaeb1d9ab5e1a8f1e7efcd0ddcb39d4623c12790";
+        strSporkKey = "0489668360ea1b46d640e109b1453fbf0c9ee11551ab115dfcae6b7dd343cab923a1349bbdfd5e587063e4700d9f58a71cca142667227497d7393b100e66c3e422";
         strObfuscationPoolDummyAddress = "PCYiHgGJJ6xGHqivmdZrYjRnhaYf6AJ2Mp";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
 
