@@ -114,7 +114,7 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // ChiliCoin: 1 day
+        nTargetTimespan = 1 * 60; // ChiliCoin: 1 minute
         nTargetSpacing = 1 * 60;  // ChiliCoin: 1 minute
         nMaturity = 50;
         nMasternodeCountDrift = 20;
@@ -150,11 +150,21 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1512640003;
+        genesis.nTime = 1513155457;
         genesis.nBits = 0x207fffff;;
         genesis.nNonce = 0;
 
         hashGenesisBlock = genesis.GetHash();
+		
+            LogPrintf("recalculating params for mainnet.\n");
+            LogPrintf("old mainnet genesis nonce: %s\n", genesis.nNonce.ToString().c_str());
+            LogPrintf("old mainnet genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
+            // deliberately empty for loop finds nonce value.
+            for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ } 
+            LogPrintf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+            LogPrintf("new mainnet genesis nonce: %s\n", genesis.nNonce.ToString().c_str());
+            LogPrintf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
+			
         assert(hashGenesisBlock == uint256("0x"));
         assert(genesis.hashMerkleRoot == uint256("0x"));
 
