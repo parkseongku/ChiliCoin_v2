@@ -5666,7 +5666,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ZPhrControlDialog</name>
     <message>
-        <location filename="../forms/zphrcontroldialog.ui" line="+20"/>
+        <location filename="../forms/zchilicontroldialog.ui" line="+20"/>
         <source>Select zCHILI to Spend</source>
         <translation type="unfinished"></translation>
     </message>
