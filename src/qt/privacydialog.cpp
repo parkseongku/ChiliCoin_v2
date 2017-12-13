@@ -434,7 +434,7 @@ void PrivacyDialog::sendzCHILI()
         return;
     }
 
-    // Clear zphr selector in case it was used
+    // Clear zCHILI selector in case it was used
     ZPhrControlDialog::listSelectedMints.clear();
 
     // Some statistics for entertainment

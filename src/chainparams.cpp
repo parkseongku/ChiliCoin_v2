@@ -159,8 +159,8 @@ public:
             LogPrintf("recalculating params for mainnet.\n");
             for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ } 
             LogPrintf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-            LogPrintf("new mainnet genesis nonce: %u\n", genesis.nNonce);
-            LogPrintf("new mainnet genesis hash: %u\n", genesis.GetHash());
+            LogPrintf("new mainnet genesis nonce: %ld\n", genesis.nNonce);
+            LogPrintf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
 			
         assert(hashGenesisBlock == uint256("0x"));
         assert(genesis.hashMerkleRoot == uint256("0x"));
