@@ -11,7 +11,7 @@ When a "Transaction Lock" occurs the hash of the related transaction is broadcas
 * `zmqpubrawtxlock`: publishes the raw transaction when locked via SwiftX
 * `zmqpubhashtxlock`: publishes the transaction hash when locked via SwiftX
 
-This mechanism has been integrated into Bitcore-Node-PHore which allows for notification to be broadcast through Insight API in one of two ways:
+This mechanism has been integrated into Bitcore-Node-Chili which allows for notification to be broadcast through Insight API in one of two ways:
 * WebSocket: [https://github.com/ChiliCoin-Project/insight-api-chilicoin#web-socket-api](https://github.com/ChiliCoin-Project/insight-api-chilicoin#web-socket-api) 
 * API: [https://github.com/ChiliCoin-Project/insight-api-chilicoin#swifttx-transactions](https://github.com/ChiliCoin-Project/insight-api-chilicoin#swifttx-transactions) 
 
