@@ -2032,8 +2032,8 @@ https://www.transifex.com/chilicoin-project/chilicoin-project-translations</tran
         <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью ChiliCoin после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
-        <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>Введите сумму в Phr для  конвертации в zPhr</translation>
+        <source>Enter an amount of Phr to convert to zCHILI</source>
+        <translation>Введите сумму в Phr для  конвертации в zCHILI</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>

@@ -2737,7 +2737,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="+52"/>
         <location line="+46"/>
-        <source>Enter an amount of Phr to convert to zPhr</source>
+        <source>Enter an amount of Phr to convert to zCHILI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2816,12 +2816,12 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+45"/>
-        <source>zPhr Control</source>
+        <source>zCHILI Control</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>zPhr Selected:</source>
+        <source>zCHILI Selected:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3304,7 +3304,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+15"/>
-        <source>zPhr Spend #: </source>
+        <source>zCHILI Spend #: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3334,7 +3334,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>zPhr Mint</source>
+        <source>zCHILI Mint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5270,27 +5270,27 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted Phr to zPhr</source>
+        <source>Converted Phr to zCHILI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zPhr</source>
+        <source>Spent zCHILI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received Phr from zPhr</source>
+        <source>Received Phr from zCHILI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zPhr from zPhr Spend</source>
+        <source>Minted Change as zCHILI from zCHILI Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zPhr to Phr</source>
+        <source>Converted zCHILI to Phr</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5300,7 +5300,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+22"/>
-        <source>zPhr Accumulator</source>
+        <source>zCHILI Accumulator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5439,7 +5439,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Received Phr from zPhr</source>
+        <source>Received Phr from zCHILI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5454,7 +5454,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Zerocoin Spend, Change in zPhr</source>
+        <source>Zerocoin Spend, Change in zCHILI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5667,7 +5667,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>ZPhrControlDialog</name>
     <message>
         <location filename="../forms/zphrcontroldialog.ui" line="+20"/>
-        <source>Select zPhr to Spend</source>
+        <source>Select zCHILI to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5683,7 +5683,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-7"/>
-        <source>zPhr</source>
+        <source>zCHILI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6538,7 +6538,7 @@ for example: alertnotify=echo %%s | mail -s &quot;ChiliCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+44"/>
-        <source>Enable automatic wallet backups triggered after each zPhr minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zCHILI minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

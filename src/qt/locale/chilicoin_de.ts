@@ -2071,8 +2071,8 @@ https://www.transifex.com/chilicoin-project/chilicoin-project-translations</tran
         <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem ChiliCoin-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
-        <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>Eingabe des Phr-Betrags, um in zPhr umzuwandeln</translation>
+        <source>Enter an amount of Phr to convert to zCHILI</source>
+        <translation>Eingabe des Phr-Betrags, um in zCHILI umzuwandeln</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2127,12 +2127,12 @@ https://www.transifex.com/chilicoin-project/chilicoin-project-translations</tran
         <translation>Status und/oder Mitteilungen aus der letzten Prägung</translation>
     </message>
     <message>
-        <source>zPhr Control</source>
-        <translation>zPhr Kontrolle</translation>
+        <source>zCHILI Control</source>
+        <translation>zCHILI Kontrolle</translation>
     </message>
     <message>
-        <source>zPhr Selected:</source>
-        <translation>zPhr Ausgewählt:</translation>
+        <source>zCHILI Selected:</source>
+        <translation>zCHILI Ausgewählt:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2469,7 +2469,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Ausgeben Zerocoin fehlgeschlagen mit Status =</translation>
     </message>
     <message>
-        <source>zPhr Spend #: </source>
+        <source>zCHILI Spend #: </source>
         <translation>zCHILI Ausgeben #:</translation>
     </message>
     <message>
@@ -2493,8 +2493,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Adresse:</translation>
     </message>
     <message>
-        <source>zPhr Mint</source>
-        <translation>zPhr Prägen</translation>
+        <source>zCHILI Mint</source>
+        <translation>zCHILI Prägen</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -3950,23 +3950,23 @@ Bitte haben Sie Geduld...</translation>
         <translation>Verschleiert</translation>
     </message>
     <message>
-        <source>Converted Phr to zPhr</source>
+        <source>Converted Phr to zCHILI</source>
         <translation>Umgewandeltes CHILI zu zCHILI</translation>
     </message>
     <message>
-        <source>Spent zPhr</source>
+        <source>Spent zCHILI</source>
         <translation>Ausgeben zCHILI</translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
+        <source>Received Phr from zCHILI</source>
         <translation>Empfangene CHILI von zCHILI</translation>
     </message>
     <message>
-        <source>Minted Change as zPhr from zPhr Spend</source>
+        <source>Minted Change as zCHILI from zCHILI Spend</source>
         <translation>Geprägtes Wechselgeld als zCHILI von zCHILI Ausgabe</translation>
     </message>
     <message>
-        <source>Converted zPhr to Phr</source>
+        <source>Converted zCHILI to Phr</source>
         <translation>Umgewandeltes zCHILI zu CHILI</translation>
     </message>
     <message>
@@ -3974,7 +3974,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>nur beobachtet</translation>
     </message>
     <message>
-        <source>zPhr Accumulator</source>
+        <source>zCHILI Accumulator</source>
         <translation>zCHILI Speicher</translation>
     </message>
     <message>
@@ -4085,7 +4085,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Masternode Vergütung</translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
+        <source>Received Phr from zCHILI</source>
         <translation>Empfangene CHILI von zCHILI</translation>
     </message>
     <message>
@@ -4097,7 +4097,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Zerocoin Ausgabe</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPhr</source>
+        <source>Zerocoin Spend, Change in zCHILI</source>
         <translation>Zerocoin Ausgabe, Wechselgeld in zCHILI</translation>
     </message>
     <message>
@@ -4268,7 +4268,7 @@ Bitte haben Sie Geduld...</translation>
 <context>
     <name>ZPhrControlDialog</name>
     <message>
-        <source>Select zPhr to Spend</source>
+        <source>Select zCHILI to Spend</source>
         <translation>Auswahl zCHILI als Ausgabe</translation>
     </message>
     <message>
@@ -4280,7 +4280,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPhr</source>
+        <source>zCHILI</source>
         <translation>zCHILI</translation>
     </message>
     <message>

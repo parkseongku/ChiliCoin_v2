@@ -145,7 +145,7 @@
                   </size>
                  </property>
                  <property name="toolTip">
-                  <string>Enter an amount of Phr to convert to zPhr</string>
+                  <string>Enter an amount of Phr to convert to zCHILI</string>
                  </property>
                  <property name="text">
                   <string>Mint Zerocoin</string>
@@ -191,7 +191,7 @@
                <item>
                 <widget class="QLabel" name="labelzCHILIAmountValue">
                  <property name="toolTip">
-                  <string>Enter an amount of Phr to convert to zPhr</string>
+                  <string>Enter an amount of Phr to convert to zCHILI</string>
                  </property>
                  <property name="text">
                   <string>0.000 000 00 CHILI</string>
@@ -476,19 +476,19 @@
                <item>
                 <widget class="QPushButton" name="pushButtonZPhrControl">
                  <property name="text">
-                  <string>zPhr Control</string>
+                  <string>zCHILI Control</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzPhrSelected">
+                <widget class="QLabel" name="labelzCHILISelected">
                  <property name="text">
-                  <string>zPhr Selected:</string>
+                  <string>zCHILI Selected:</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzPhrSelected_int">
+                <widget class="QLabel" name="labelzCHILISelected_int">
                  <property name="text">
                   <string>0</string>
                  </property>

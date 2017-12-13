@@ -17,7 +17,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Select zPhr to Spend</string>
+   <string>Select zCHILI to Spend</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
@@ -42,7 +42,7 @@
      <item row="1" column="0">
       <widget class="QLabel" name="labelZPhr">
        <property name="text">
-        <string>zPhr</string>
+        <string>zCHILI</string>
        </property>
       </widget>
      </item>
@@ -96,7 +96,7 @@
        </column>
        <column>
         <property name="text">
-         <string notr="true">zPhr Public ID</string>
+         <string notr="true">zCHILI Public ID</string>
         </property>
        </column>
        <column>

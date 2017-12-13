@@ -283,14 +283,14 @@ void PrivacyDialog::on_pushButtonSpendzCHILI_clicked()
 
 void PrivacyDialog::on_pushButtonZPhrControl_clicked()
 {
-    ZPhrControlDialog* zPhrControl = new ZPhrControlDialog(this);
-    zPhrControl->setModel(walletModel);
-    zPhrControl->exec();
+    ZPhrControlDialog* zCHILIControl = new ZPhrControlDialog(this);
+    zCHILIControl->setModel(walletModel);
+    zCHILIControl->exec();
 }
 
 void PrivacyDialog::setZPhrControlLabels(int64_t nAmount, int nQuantity)
 {
-    ui->labelzPhrSelected_int->setText(QString::number(nAmount));
+    ui->labelzCHILISelected_int->setText(QString::number(nAmount));
     ui->labelQuantitySelected_int->setText(QString::number(nQuantity));
 }
 
@@ -396,7 +396,7 @@ void PrivacyDialog::sendzCHILI()
     ui->TEMintStatus->setPlainText(tr("Spending Zerocoin.\nComputationally expensive, might need several minutes depending on the selected Security Level and your hardware. \nPlease be patient..."));
     ui->TEMintStatus->repaint();
 
-    // use mints from zPhr selector if applicable
+    // use mints from zCHILI selector if applicable
     vector<CZerocoinMint> vMintsSelected;
     if (!ZPhrControlDialog::listSelectedMints.empty()) {
         vMintsSelected = ZPhrControlDialog::GetSelectedMints();
@@ -442,7 +442,7 @@ void PrivacyDialog::sendzCHILI()
     CAmount nValueIn = 0;
     int nCount = 0;
     for (CZerocoinSpend spend : receipt.GetSpends()) {
-        strStats += tr("zPhr Spend #: ") + QString::number(nCount) + ", ";
+        strStats += tr("zCHILI Spend #: ") + QString::number(nCount) + ", ";
         strStats += tr("denomination: ") + QString::number(spend.GetDenomination()) + ", ";
         strStats += tr("serial: ") + spend.GetSerial().ToString().c_str() + "\n";
         strStats += tr("Spend is 1 of : ") + QString::number(spend.GetMintCount()) + " mints in the accumulator\n";
@@ -457,7 +457,7 @@ void PrivacyDialog::sendzCHILI()
         strStats += tr("address: ");
         CTxDestination dest;
         if(txout.scriptPubKey.IsZerocoinMint())
-            strStats += tr("zPhr Mint");
+            strStats += tr("zCHILI Mint");
         else if(ExtractDestination(txout.scriptPubKey, dest))
             strStats += tr(CBitcoinAddress(dest).ToString().c_str());
         strStats += "\n";

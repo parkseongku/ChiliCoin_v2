@@ -2076,7 +2076,7 @@ https://www.transifex.com/chilicoin-project/chilicoin-project-translations</tran
         <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с ChiliCoin мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
-        <source>Enter an amount of Phr to convert to zPhr</source>
+        <source>Enter an amount of Phr to convert to zCHILI</source>
         <translation>Въведете колко CHILI  да се конвертират в zCHILI</translation>
     </message>
     <message>
@@ -2132,11 +2132,11 @@ https://www.transifex.com/chilicoin-project/chilicoin-project-translations</tran
         <translation>Състояния и/или Съобщения от последните действия по сечене на монети.</translation>
     </message>
     <message>
-        <source>zPhr Control</source>
+        <source>zCHILI Control</source>
         <translation>zCHILI Контрол</translation>
     </message>
     <message>
-        <source>zPhr Selected:</source>
+        <source>zCHILI Selected:</source>
         <translation>Избрани zCHILI:</translation>
     </message>
     <message>
@@ -2474,7 +2474,7 @@ Please be patient...</source>
         <translation>Харченето на Zerocoin се провали със статус =</translation>
     </message>
     <message>
-        <source>zPhr Spend #: </source>
+        <source>zCHILI Spend #: </source>
         <translation>zCHILI Похарчени #:</translation>
     </message>
     <message>
@@ -2498,7 +2498,7 @@ Please be patient...</source>
         <translation>адрес:</translation>
     </message>
     <message>
-        <source>zPhr Mint</source>
+        <source>zCHILI Mint</source>
         <translation>Сечене на zCHILI</translation>
     </message>
     <message>
@@ -3955,23 +3955,23 @@ Please be patient...</source>
         <translation>Обфускирани</translation>
     </message>
     <message>
-        <source>Converted Phr to zPhr</source>
+        <source>Converted Phr to zCHILI</source>
         <translation>Конвертиран CHILI във zCHILI</translation>
     </message>
     <message>
-        <source>Spent zPhr</source>
+        <source>Spent zCHILI</source>
         <translation>Похарчени zCHILI</translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
+        <source>Received Phr from zCHILI</source>
         <translation>Получен CHILI от zCHILI</translation>
     </message>
     <message>
-        <source>Minted Change as zPhr from zPhr Spend</source>
+        <source>Minted Change as zCHILI from zCHILI Spend</source>
         <translation>Исечено ресто като zCHILI от похарчените zCHILI</translation>
     </message>
     <message>
-        <source>Converted zPhr to Phr</source>
+        <source>Converted zCHILI to Phr</source>
         <translation>Конвертирани zCHILI в CHILI</translation>
     </message>
     <message>
@@ -3979,7 +3979,7 @@ Please be patient...</source>
         <translation>наблюдение само</translation>
     </message>
     <message>
-        <source>zPhr Accumulator</source>
+        <source>zCHILI Accumulator</source>
         <translation>zCHILI Акумулатор</translation>
     </message>
     <message>
@@ -4086,7 +4086,7 @@ Please be patient...</source>
         <translation>Мастърноуд възнаграждение</translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
+        <source>Received Phr from zCHILI</source>
         <translation>Получен CHILI от zCHILI</translation>
     </message>
     <message>
@@ -4098,7 +4098,7 @@ Please be patient...</source>
         <translation>Харчене на Zerocoin</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPhr</source>
+        <source>Zerocoin Spend, Change in zCHILI</source>
         <translation>Харчене на Zerocoin, Ресто в zCHILI</translation>
     </message>
     <message>
@@ -4261,7 +4261,7 @@ Please be patient...</source>
 <context>
     <name>ZPhrControlDialog</name>
     <message>
-        <source>Select zPhr to Spend</source>
+        <source>Select zCHILI to Spend</source>
         <translation>Изберете zCHILI за Изпращане</translation>
     </message>
     <message>
@@ -4273,7 +4273,7 @@ Please be patient...</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPhr</source>
+        <source>zCHILI</source>
         <translation>zCHILI</translation>
     </message>
     <message>

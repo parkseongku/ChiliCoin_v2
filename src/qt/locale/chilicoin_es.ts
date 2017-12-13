@@ -2080,8 +2080,8 @@ https://www.transifex.com/chilicoin-project/chilicoin-project-translations</tran
         <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red ChiliCoin después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
-        <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>Introduzca la cantidad de Phr que desea convertir a zPhr</translation>
+        <source>Enter an amount of Phr to convert to zCHILI</source>
+        <translation>Introduzca la cantidad de Phr que desea convertir a zCHILI</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2136,12 +2136,12 @@ https://www.transifex.com/chilicoin-project/chilicoin-project-translations</tran
         <translation>Estado y/o Mensajes de la última Acción de Creación de moneda.</translation>
     </message>
     <message>
-        <source>zPhr Control</source>
-        <translation>Control zPhr</translation>
+        <source>zCHILI Control</source>
+        <translation>Control zCHILI</translation>
     </message>
     <message>
-        <source>zPhr Selected:</source>
-        <translation>zPhr Seleccionados:</translation>
+        <source>zCHILI Selected:</source>
+        <translation>zCHILI Seleccionados:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2478,8 +2478,8 @@ Por favor tenga paciencia...</translation>
         <translation>Gastar Zerocoin falló con estado =</translation>
     </message>
     <message>
-        <source>zPhr Spend #: </source>
-        <translation>Gastar zPhr #:</translation>
+        <source>zCHILI Spend #: </source>
+        <translation>Gastar zCHILI #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2502,8 +2502,8 @@ Por favor tenga paciencia...</translation>
         <translation>dirección:</translation>
     </message>
     <message>
-        <source>zPhr Mint</source>
-        <translation>Creación de zPhr</translation>
+        <source>zCHILI Mint</source>
+        <translation>Creación de zCHILI</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -3959,32 +3959,32 @@ Por favor tenga paciencia...</translation>
         <translation>Ofuscado</translation>
     </message>
     <message>
-        <source>Converted Phr to zPhr</source>
-        <translation>Phr convertidos a zPhr</translation>
+        <source>Converted Phr to zCHILI</source>
+        <translation>Phr convertidos a zCHILI</translation>
     </message>
     <message>
-        <source>Spent zPhr</source>
-        <translation>zPhr Gastados</translation>
+        <source>Spent zCHILI</source>
+        <translation>zCHILI Gastados</translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Phr recibidos desde zPhr</translation>
+        <source>Received Phr from zCHILI</source>
+        <translation>Phr recibidos desde zCHILI</translation>
     </message>
     <message>
-        <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>Cambio Creado en zPhr por un Gasto zPhr</translation>
+        <source>Minted Change as zCHILI from zCHILI Spend</source>
+        <translation>Cambio Creado en zCHILI por un Gasto zCHILI</translation>
     </message>
     <message>
-        <source>Converted zPhr to Phr</source>
-        <translation>zPhr convertidos en Phr</translation>
+        <source>Converted zCHILI to Phr</source>
+        <translation>zCHILI convertidos en Phr</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>sólo-lectura</translation>
     </message>
     <message>
-        <source>zPhr Accumulator</source>
-        <translation>Acumulador zPhr</translation>
+        <source>zCHILI Accumulator</source>
+        <translation>Acumulador zCHILI</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4094,8 +4094,8 @@ Por favor tenga paciencia...</translation>
         <translation>Recompensa de Nodo Maestro</translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Phr recibidos desde zPhr</translation>
+        <source>Received Phr from zCHILI</source>
+        <translation>Phr recibidos desde zCHILI</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4106,8 +4106,8 @@ Por favor tenga paciencia...</translation>
         <translation>Gasto de Zerocoin</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>Gasto de Zerocoin, Cambio en zPhr</translation>
+        <source>Zerocoin Spend, Change in zCHILI</source>
+        <translation>Gasto de Zerocoin, Cambio en zCHILI</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4277,8 +4277,8 @@ Por favor tenga paciencia...</translation>
 <context>
     <name>ZPhrControlDialog</name>
     <message>
-        <source>Select zPhr to Spend</source>
-        <translation>Seleccione zPhr a Gastar</translation>
+        <source>Select zCHILI to Spend</source>
+        <translation>Seleccione zCHILI a Gastar</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4289,8 +4289,8 @@ Por favor tenga paciencia...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPhr</source>
-        <translation>zPhr</translation>
+        <source>zCHILI</source>
+        <translation>zCHILI</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
