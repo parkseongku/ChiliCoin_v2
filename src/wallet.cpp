@@ -466,7 +466,7 @@ bool CWallet::GetMasternodeVinAndKeys(CTxIn& txinRet, CPubKey& pubKeyRet, CKey& 
 
     // Find possible candidates
     std::vector<COutput> vPossibleCoins;
-    AvailableCoins(vPossibleCoins, true, NULL, false, ONLY_1000);
+    AvailableCoins(vPossibleCoins, true, NULL, false, ONLY_500);
     if (vPossibleCoins.empty()) {
         LogPrintf("CWallet::GetMasternodeVinAndKeys -- Could not locate any valid masternode vin\n");
         return false;
@@ -1624,14 +1624,14 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
                 bool found = false;
                 if (nCoinType == ONLY_DENOMINATED) {
                     found = IsDenominatedAmount(pcoin->vout[i].nValue);
-                } else if (nCoinType == ONLY_NOT1000IFMN) {
-                    found = !(fMasterNode && pcoin->vout[i].nValue == 1000 * COIN);
+                } else if (nCoinType == ONLY_NOT500IFMN) {
+                    found = !(fMasterNode && pcoin->vout[i].nValue == 500 * COIN);
                 } else if (nCoinType == ONLY_NONDENOMINATED_NOT1000IFMN) {
                     if (IsCollateralAmount(pcoin->vout[i].nValue)) continue; // do not use collateral amounts
                     found = !IsDenominatedAmount(pcoin->vout[i].nValue);
-                    if (found && fMasterNode) found = pcoin->vout[i].nValue != 1000 * COIN; // do not use Hot MN funds
-                } else if (nCoinType == ONLY_1000) {
-                    found = pcoin->vout[i].nValue == 1000 * COIN;
+                    if (found && fMasterNode) found = pcoin->vout[i].nValue != 500 * COIN; // do not use Hot MN funds
+                } else if (nCoinType == ONLY_500) {
+                    found = pcoin->vout[i].nValue == 500 * COIN;
                 } else {
                     found = true;
                 }
@@ -1650,7 +1650,7 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
                 if (mine == ISMINE_WATCH_ONLY)
                     continue;
 
-                if (IsLockedCoin((*it).first, i) && nCoinType != ONLY_1000)
+                if (IsLockedCoin((*it).first, i) && nCoinType != ONLY_500)
                     continue;
                 if (pcoin->vout[i].nValue <= 0 && !fIncludeZeroValue)
                     continue;
@@ -2000,7 +2000,7 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, CAmount nValueMin, CAmount 
 
     BOOST_FOREACH (const COutput& out, vCoins) {
         // masternode-like input should not be selected by AvailableCoins now anyway
-        //if(out.tx->vout[out.i].nValue == 1000*COIN) continue;
+        //if(out.tx->vout[out.i].nValue == 500*COIN) continue;
         if (nValueRet + out.tx->vout[out.i].nValue <= nValueMax) {
             bool fAccepted = false;
 
@@ -2096,7 +2096,7 @@ bool CWallet::SelectCoinsDark(CAmount nValueMin, CAmount nValueMax, std::vector<
         if (out.tx->vout[out.i].nValue < CENT) continue;
         //do not allow collaterals to be selected
         if (IsCollateralAmount(out.tx->vout[out.i].nValue)) continue;
-        if (fMasterNode && out.tx->vout[out.i].nValue == 1000 * COIN) continue; //masternode input
+        if (fMasterNode && out.tx->vout[out.i].nValue == 500 * COIN) continue; //masternode input
 
         if (nValueRet + out.tx->vout[out.i].nValue <= nValueMax) {
             CTxIn vin = CTxIn(out.tx->GetHash(), out.i);
@@ -2369,7 +2369,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                 if (!SelectCoins(nTotalValue, setCoins, nValueIn, coinControl, coin_type, useIX)) {
                     if (coin_type == ALL_COINS) {
                         strFailReason = _("Insufficient funds.");
-                    } else if (coin_type == ONLY_NOT1000IFMN) {
+                    } else if (coin_type == ONLY_NOT500IFMN) {
                         strFailReason = _("Unable to locate enough funds for this transaction that are not equal 10000 CHILI.");
                     } else if (coin_type == ONLY_NONDENOMINATED_NOT1000IFMN) {
                         strFailReason = _("Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CHILI.");
