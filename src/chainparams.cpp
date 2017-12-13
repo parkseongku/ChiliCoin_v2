@@ -143,18 +143,12 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1513155457;
         genesis.nBits = 0x207fffff;;
-        genesis.nNonce = 0;
+        genesis.nNonce = 101666;
 
         hashGenesisBlock = genesis.GetHash();
-		
-            LogPrintf("recalculating params for mainnet.\n");
-            for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ } 
-            LogPrintf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-            LogPrintf("new mainnet genesis nonce: %u\n", genesis.nNonce);
-            LogPrintf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
 			
-        assert(hashGenesisBlock == uint256("0x"));
-        assert(genesis.hashMerkleRoot == uint256("0x"));
+        assert(hashGenesisBlock == uint256("0x00b54bbf556668df8bd4a61c178e57ab00450f3aa29c88282d055b60cafc620f"));
+        assert(genesis.hashMerkleRoot == uint256("0xe1a5306ccf0ac92f78becaa7202467c035e72fc767980a2aee89d43280461d66"));
 
         vSeeds.push_back(CDNSSeedData("0", "seed0.chilicoin.io"));
         vSeeds.push_back(CDNSSeedData("1", "seed1.chilicoin.io"));
@@ -249,7 +243,7 @@ public:
         genesis.nNonce = 12345;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
+        //assert(hashGenesisBlock == uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -317,7 +311,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 11773;
-        assert(hashGenesisBlock == uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
+        //assert(hashGenesisBlock == uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
